@@ -25,7 +25,7 @@ public class CustomMM2ReplicationPolicy extends DefaultReplicationPolicy {
 
     @Override
     public String formatRemoteTopic(String sourceClusterAlias, String topic) {
-        return topic;
+        return sourceClusterAlias;
     }
 
     @Override
